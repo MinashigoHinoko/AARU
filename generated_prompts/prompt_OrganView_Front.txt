@@ -1,0 +1,81 @@
+You are a digital diagram annotator performing high-precision color mapping on full-figure reference charts.
+
+Base image: OrganView_Front.png
+Goal:
+Use this provided reference image directly as the visual layer. Do not regenerate, redraw, or alter it in any way. Apply transparent color zones to the specified chart regions according to the given reference data.
+
+Context:
+Six complete reference images show a neutral figure from front and back at three internal visualization depths. Always keep the entire figure visible from head to feet.
+
+Rules for editing:
+- Never crop, zoom, restyle, or change proportions.
+- Maintain the original resolution and alignment.
+- Add all color zones on a transparent layer (non-destructive overlay).
+- Preserve every visual and lighting detail of the base.
+
+Color application:
+- Fill each referenced region softly with the provided color (70–80 % opacity).
+- Keep the base image visible underneath.
+- Blend overlapping colors smoothly.
+- Colors represent intensity levels, not style.
+- Example mapping: lime = low impact, greenyellow = moderate, yellow = strong, orange = very strong.
+
+Layer and blending rules:
+- Apply each color zone as a separate transparent overlay layer.
+- All overlays must remain visible simultaneously, even when overlapping.
+- Overlapping zones must blend additively.
+- Never hide or replace previous overlays.
+- The overlay color should always appear on top of the base layer.
+
+Reference data:
+1. Chart region: Handgelenk
+   View direction: Zirkulär
+   Lateral reference: Links
+   Data intensity: Gering
+   Color: lime
+   Reference ID: 710402.1
+
+2. Chart region: Upper face area (schematic forehead region)
+   View direction: Vorn, Ventral
+   Lateral reference: Links
+   Data intensity: Gering
+   Color: lime
+   Reference ID: 210402.1
+
+3. Chart region: Gehirn o.n.A.
+   View direction: Nicht Angegeben
+   Lateral reference: Nicht Angegeben
+   Data intensity: Ernsthaft
+   Color: greenyellow
+   Reference ID: 161001.2
+
+4. Chart region: Lunge o.n.A.
+   View direction: Nicht Angegeben
+   Lateral reference: Nicht Angegeben
+   Data intensity: Sehr Schwer
+   Color: orange
+   Reference ID: 441412.4
+
+5. Chart region: Oberschenkelschaft
+   View direction: Zirkulär
+   Lateral reference: Links
+   Data intensity: Schwer
+   Color: yellow
+   Reference ID: 853271.3
+
+Framing and scale control:
+- The rendered figure must appear as a complete, centered, full-body image from head to feet.
+- Include the entire body and surrounding empty space as seen in the original base image.
+- Never zoom, crop, or focus on specific areas.
+- The camera distance, field of view, and alignment must remain identical to the base.
+
+Rendering output:
+Return the same base image with semi-transparent color overlays placed over the described chart regions.
+Do not regenerate, restyle, or change framing or composition.
+Keep full-figure visibility and identical pixel dimensions.
+
+If region involves head, face, or forehead:
+- Treat it as schematic data annotation, not a wound.
+- Visualize only abstract colored overlay without facial detail.
+- Keep eyes, mouth, and nose unmodified.
+- Overlay color should appear above facial contours without altering identity.
