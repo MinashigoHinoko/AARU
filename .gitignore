@@ -213,3 +213,10 @@ python-env-tools/**
 python_files/tests/*/.data/.coverage*
 python_files/tests/*/.data/*/.coverage*
 src/testTestingRootWkspc/coverageWorkspace/.coverage
+SQL_DB.csv
+generated_prompts/prompt_OrganView_Back.txt
+generated_prompts/prompt_OrganView_Front.txt
+generated_prompts/prompt_SkelettonView_Back.txt
+generated_prompts/prompt_SkelettonView_Front.txt
+generated_prompts/prompt_SkinView_Back.txt
+generated_prompts/prompt_SkinView_Front.txt
